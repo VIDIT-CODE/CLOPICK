@@ -1,0 +1,152 @@
+.category-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.category-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.category-description {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.category-section-attractive {
+  margin: 2.5rem 0 2rem 0;
+  padding: 2.5rem 1vw 2rem 1vw;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13), 0 2px 12px #00fff7;
+  max-width: 96vw;
+  width: 100%;
+}
+
+.category-title-attractive {
+  color: #00fff7;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #00fff7, 0 2px 8px #232526;
+}
+
+.category-grid-attractive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  justify-content: center;
+}
+
+.category-card-attractive {
+  background: #18191a;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #00fff7, 0 1.5px 8px #232526;
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  min-width: 220px;
+  max-width: 260px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.15rem;
+}
+
+.category-card-attractive:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px #00fff7, 0 2px 12px #232526;
+  background: #232526;
+}
+
+.category-img-wrapper {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border: 3px solid #00fff7;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #00fff7;
+}
+
+.category-img-attractive {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.18s;
+}
+
+.category-card-attractive:hover .category-img-attractive {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.category-name-attractive {
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #00fff7;
+}
+
+/* Add or update this rule for the slideshow/banner container */
+.slideshow-container,
+.banner-container {
+  width: 100%;
+  max-width: 1800px; /* or the same as your navbar/banner max-width */
+  margin: 0 auto;
+  /* Add any other shared styles as needed */
+}

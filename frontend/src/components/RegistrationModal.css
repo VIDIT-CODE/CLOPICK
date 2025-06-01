@@ -1,0 +1,118 @@
+.modal-overlay {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Makes it appear above everything else */
+}
+
+.modal-content {
+  background: white;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 10000; /* Extra layer of safety */
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.modal-header button {
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  border: 1px solid #333;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.modal-header .active {
+  background: #000000;
+  color: #fff;
+}
+
+.registration-form .form-group {
+  margin-top: 1rem;
+}
+
+.registration-form h2 {
+  margin-bottom: 10px;
+}
+
+.registration-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.registration-form button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #000000;
+  border: 1px solid #a88734;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns label to the left */
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.password-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* right padding for eye icon */
+  box-sizing: border-box;
+}
+
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  font-size: 1.1rem;
+}
+

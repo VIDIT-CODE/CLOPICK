@@ -1,0 +1,79 @@
+/* src/styles/Navbar.css */
+.navbar {
+  position: fixed; /* navbar fixed on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* increased so it is on top of most content */
+  background-color: black;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  /* No changes needed here */
+}
+
+.logo {
+  max-width: 120px;
+  max-height: 100px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  filter: none;
+  display: block;
+  margin-left: 0;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1001;
+  overflow-x: visible; /* Prevent horizontal scroll */
+}
+
+.navbar-center form {
+  width: 100%; /* form full width */
+  max-width: 600px; /* max width */
+}
+
+.search-bar {
+  width: 100%; /* input full width */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  position: relative; /* fix stacking */
+  z-index: 1001;
+}
+
+.navbar-icon, .icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-icon:hover,
+.icon:hover {
+  color: #ff9900; /* subtle highlight on hover */
+}
+
+body, html {
+  overflow-x: hidden !important;
+}

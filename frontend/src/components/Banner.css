@@ -1,0 +1,7 @@
+.banner {
+  margin-top: 80px; /* Must be more than navbar height */
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
